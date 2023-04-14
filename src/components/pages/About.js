@@ -3,12 +3,12 @@ import React from "react";
 function About() {
   return (
     <div>
-      <h1 className="text-center">About</h1>
-      <p>
-        Lorem ipsum dolor sit amet, est ut enim consequat. Nostrum fastidii partiendo sed ne, no
-        mutat ludus aperiri mea, per in choro dolorem electram. Invidunt reprimique assueverit quo
-        ne, eruditi graecis pro ut. Usu ut diceret scaevola evertitur, appareat voluptatibus ad vel.
-      </p>
+      <h1 className="text-center">About me</h1>
+      <p>Passion for technologies bla bla bla</p>
+
+      <div className="passions">
+        <p>I have different passions</p>
+      </div>
     </div>
   );
 }
