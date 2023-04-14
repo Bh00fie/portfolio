@@ -12,48 +12,48 @@ function NavTabs() {
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          Home
+          Abhinandan Thour
+        </NavLink>
+      </li>
+      <li className="nav-item">
+        <NavLink
+          to="project"
+          className={({ isActive }) =>
+            isActive ? 'nav-link active' : 'nav-link'
+          }
+        >
+          Projects
+        </NavLink>
+      </li>
+      <li className="nav-item">
+        <NavLink
+          to="CV"
+          className={({ isActive }) =>
+            isActive ? 'nav-link active' : 'nav-link'
+          }
+        >
+          CV
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink
           to="about"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          About
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="blog"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Blog
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="contact"
           end
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          Contact
+          About Me
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink
-          to="contact/learn"
+          to="contact"
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          Learn
+          Contact Me
         </NavLink>
       </li>
     </ul>
