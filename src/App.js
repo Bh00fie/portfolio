@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavTabs from './components/NavTabs';
+import Footer from './components/Footer';
 import Home from './components/pages/Home';
 import Project from './components/pages/Project';
 import CV from './components/pages/CV';
@@ -20,10 +21,10 @@ function App() {
           <Route path="project" element={<Project />} />
           <Route path="CV" element={<CV />} />
           <Route path="about" element={<About />} />
-          {/* Define a route that will have descendant routes */}
           <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
