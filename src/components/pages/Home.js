@@ -2,6 +2,7 @@ import React from "react";
 
 function Home() {
   return (
+    <div className="home">
       <div className="portfolioHome">
         <img className="photoHome" src="https://placehold.co/400" alt="photoprofile" />
         <div className="descriptionHome  shadow p-3 bg-white rounded">
@@ -13,6 +14,7 @@ function Home() {
           </div>
         </div>
       </div>
+    </div>
   );
 }
 

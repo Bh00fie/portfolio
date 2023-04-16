@@ -1,13 +1,27 @@
 /* Main Parent Container */
 .App {
-    text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* PAGES */
 /* HOME PAGE */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 25vh 0;
+}
+.portfolioHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .descriptionHome {
     margin-left: 2rem;
 }
@@ -42,6 +56,7 @@
 /* Footer */
 .footer {
     margin-top: auto;
+    margin-bottom: 2rem;
 }
 .footer p {
     text-align: center;
