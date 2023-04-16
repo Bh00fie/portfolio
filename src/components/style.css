@@ -1,6 +1,41 @@
+.portfolioHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50% 0;
+}
+
+.descriptionHome {
+    margin-left: 2rem;
+}
+
+.photoHome {
+    border-radius: 50%;
+    height: auto;
+    width: 20vw;
+    max-width: 400px;
+    min-width: 15rem;
+}
+
+.homeLinks {
+    text-align: center;
+}
+
+@media (max-width: 601px) {
+    .portfolioHome {
+        flex-direction: column;
+    }
+}
+
+
+/* Footer */
+
 .footer p {
     text-align: center;
     font-weight: 600;
     font-size: 1.1rem;
-    margin: 3vh 0 0 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
+
