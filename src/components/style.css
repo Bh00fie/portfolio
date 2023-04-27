@@ -32,12 +32,13 @@
     max-width: 400px;
     min-width: 15rem;
     margin-right: 2rem;
+    transition-duration: 2.5s;
 }
 /* Hover Effect to have the avatar in the photo to come out from the container */
 .photoHome:hover {
-    width: 35vw;
-    min-width: 20rem;
+    transform: scale(1.2);
 }
+
 .homeLinks {
     text-align: center;
 }
@@ -50,6 +51,9 @@
     .descriptionHome{
         margin-left: 0;
         margin-top: 2rem;
+    }
+    .photoHome{
+        margin-right: 0;
     }
 }
 
