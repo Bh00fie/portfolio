@@ -4,67 +4,94 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* PAGES */
-/* HOME PAGE */
-.home {
+  }
+  
+  /* PAGES */
+  /* HOME PAGE */
+  .home {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin: 25vh 0;
-}
-.portfolioHome {
+    margin: auto 0;
+  }
+  
+  .portfolioHome {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.descriptionHome {
+  }
+  
+  .descriptionHome {
     margin-left: 2rem;
-}
-.photoHome {
+    transition: transform 300ms;
+    position: relative;
+  }
+  
+  .photoHome {
     border-radius: 50%;
     height: auto;
     width: 20vw;
     max-width: 400px;
     min-width: 15rem;
     margin-right: 2rem;
-}
-/* Hover Effect to have the avatar in the photo to come out from the container */
-.photoHome:hover {
-    width: 35vw;
-    min-width: 20rem;
-}
-.homeLinks {
+    transition: transform 300ms;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Hover Effect to have the avatar in the photo to come out from the container */
+  .photoHome:hover {
+    transform: scale(1.5);
+  }
+  
+  .photoHome:hover ~ .descriptionHome {
+    transform: translateX(5rem);
+  }
+  
+  .homeLinks {
     text-align: center;
-}
-/* Adding responsiveness to the webpage */
-@media (max-width: 601px) {
+  }
+  
+  /* Adding responsiveness to the webpage */
+  @media (max-width: 850px) {
     .portfolioHome {
-        flex-direction: column;
+      flex-direction: column;
+    }
+  
+    .descriptionHome {
+      margin-left: 0;
+      margin-top: 2rem;
     }
 
-    .descriptionHome{
-        margin-left: 0;
-        margin-top: 2rem;
+    .photoHome {
+        margin-right: 0;
     }
-}
 
-/* COMPONENTS */
-/* Footer */
-.footer {
+    .photoHome:hover {
+        transform: scale(1.1);
+    }
+
+    .photoHome:hover ~ .descriptionHome {
+        transform: translateY(3rem); /* Adjust the value as needed */
+      }
+  }
+
+  
+  /* COMPONENTS */
+  /* Footer */
+  .footer {
     margin-top: auto;
     margin-bottom: 2rem;
-}
-.footer p {
+  }
+  
+  .footer p {
     text-align: center;
     font-weight: 600;
     font-size: 1.1rem;
     display: flex;
     justify-content: center;
     margin: 0;
-}
-
+  }
+  
