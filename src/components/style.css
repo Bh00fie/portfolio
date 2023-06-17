@@ -13,8 +13,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    margin: auto 0;
+    flex-grow: 1; /* Allow the .home section to grow and occupy remaining space */
   }
   
   .portfolioHome {
@@ -64,22 +63,32 @@
       margin-left: 0;
       margin-top: 2rem;
     }
-
+  
     .photoHome {
-        margin-right: 0;
+      margin-right: 0;
     }
-
+  
     .photoHome:hover {
-        transform: scale(1.1);
+      transform: scale(1.1);
     }
-
+  
     .photoHome:hover ~ .descriptionHome {
-        transform: translateY(3rem); /* Adjust the value as needed */
-      }
+      transform: translateY(3rem); /* Adjust the value as needed */
+    }
   }
-
   
   /* COMPONENTS */
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 1rem;
+    z-index: 2; /* Ensure the navbar is above other elements */
+  }
+  
   /* Footer */
   .footer {
     margin-top: auto;
