@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100vh;
     flex-grow: 1; /* Allow the .home section to grow and occupy remaining space */
   }
   
@@ -28,6 +29,13 @@
     position: relative;
   }
   
+  .homeLinks a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+    font-weight: 700;
+  }
+
   .photoHome {
     border-radius: 50%;
     height: auto;
@@ -42,7 +50,7 @@
   
   /* Hover Effect to have the avatar in the photo to come out from the container */
   .photoHome:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
   
   .photoHome:hover ~ .descriptionHome {
@@ -79,16 +87,16 @@
   
   /* COMPONENTS */
   /* Navbar */
-  .navbar {
+  /* .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: #fff;
     padding: 1rem;
-    z-index: 2; /* Ensure the navbar is above other elements */
+    z-index: 2; 
   }
-  
+   */
   /* Footer */
   .footer {
     margin-top: auto;
