@@ -1,11 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 // import NavTabs from './components/NavTabs';
 import Footer from './components/Footer';
 import Home from './components/pages/Home';
-import Project from './components/pages/Project';
-import CV from './components/pages/CV';
-import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import '../src/components/style.css'
 
