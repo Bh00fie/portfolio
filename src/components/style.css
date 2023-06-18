@@ -1,4 +1,8 @@
 /* Main Parent Container */
+* {
+  font-family: "Inter";
+}
+
 .App {
     min-height: 100vh;
     display: flex;
@@ -40,7 +44,7 @@
   .photoHome {
     border-radius: 50%;
     height: auto;
-    width: 20vw;
+    width: 21vw;
     max-width: 400px;
     min-width: 15rem;
     margin-right: 2rem;
@@ -92,6 +96,10 @@
   text-align: center;
 }
 
+#personalTitle {
+  font-weight: 700;
+}
+
   /* COMPONENTS */
   /* Navbar */
   /* .navbar {
@@ -116,6 +124,6 @@
     font-size: 1.1rem;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 1vh 0 0 0;
   }
   
