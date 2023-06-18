@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import '../src/components/style.css'
+import Project from './components/pages/Project';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="contact" element={<Contact />} /> */}
           {/* </Routes>  */}
           <About/>
+          <Project/>
           <Footer />
         </div>
       </Router>

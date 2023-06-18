@@ -96,8 +96,22 @@
   text-align: center;
 }
 
-#personalTitle {
+.sectionTitle {
   font-weight: 700;
+  text-align: center;
+}
+
+.card-body{
+  display: none;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.card-img-top:hover + .card-body {
+  display: block;
 }
 
   /* COMPONENTS */
