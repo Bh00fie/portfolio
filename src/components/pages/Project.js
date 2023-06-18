@@ -7,7 +7,7 @@ function generateCards(num) {
   
   for (let i = 1; i <= num; i++) {
     cards.push(
-      <div key={i} className={`card ${i % 2 === 0 ? 'left' : 'right'}`}>
+      <div key={i} className={`card ${i % 2 === 0 ? 'left' : 'right'} shadow p-3 bg-white rounded`}>
         <Card>
           <Card.Img variant="top" src="https://placehold.co/400x300" />
           <Card.Body>
@@ -23,8 +23,8 @@ function generateCards(num) {
 
 function Project() {
   return (
-    <div>
-      <h1 className="sectionTitle">Projects</h1>
+    <div className="pageContainer">
+      <h1 className="sectionTitle notfirstTitle">Projects</h1>
       <div id="projectsCard" className="cardsContainer">
         {generateCards(4)} {/* Change the argument to the desired number of cards */}
       </div>

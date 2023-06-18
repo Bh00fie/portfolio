@@ -92,19 +92,26 @@
   
 /* About Me */
 #personalDescription {
-  margin-top: 1rem;
   text-align: center;
 }
 
 .sectionTitle {
   font-weight: 700;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
+.notfirstTitle {
+  margin-top: 2rem;
+
+}
 .card-body{
   display: none;
 }
 
+.card {
+  border: none !important;
+}
 .card-title {
   text-align: center;
   margin-bottom: 0 !important;
